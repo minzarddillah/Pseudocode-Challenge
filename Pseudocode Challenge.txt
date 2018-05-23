@@ -1,0 +1,101 @@
+NEWTON SECOND LAW
+
+ALGORITMA
+==========
+1. cari massa benda (kg)
+  1.1 jika massa benda lebih dari 0 maka lanjut ke step 2
+  1.2 jika massa benda kurang dari 0 maka lanjut ke step 1
+2. cari percepatan benda (m/s2)
+  2.1 jika percepatan benda lebih dari 0 maka lanjut ke step 3
+  2.2 jika percepatan kurang dari 0 maka lanjut ke step 2
+3. menghitung resultan gaya (MASSA X PERCEPATAN)
+4. hasil (NEWTON)
+
+PSEUDOCODE
+==========
+store "massa" with value 600
+store "percepatan" with value 2
+
+if 'massa' or 'percepatan' <= 0 then
+  display error 'ANGKA HARUS LEBIH DARI 0'
+else
+  store 'newton' set with calculate ('massa' * 'percepatan')
+  display "newton"
+end if
+
+====================================================================================
+TAHUN KABISAT
+
+ALGORITMA
+==========
+1. Jika angka tahun itu habis dibagi 400, maka tahun itu sudah pasti tahun kabisat.
+2. Jika angka tahun itu tidak habis dibagi 400 tetapi habis dibagi 100, maka tahun itu sudah pasti bukan merupakan tahun kabisat.
+3. Jika angka tahun itu tidak habis dibagi 400, tidak habis dibagi 100 akan tetapi habis dibagi 4, maka tahun itu merupakan tahun kabisat.
+4. Jika angka tahun tidak habis dibagi 400, tidak habis dibagi 100, dan tidak habis dibagi 4, maka tahun tersebut bukan merupakan tahun kabisat.
+
+PSEUDOCODE
+==========
+if year modulo 4 is 0
+then
+  if year modulo 100 is 0
+  then 
+    if year modulo 400 is 0
+    then
+      ini tahun Kabisat
+    else
+      ini bukan tahun Kabisat
+  else ini tahun Kabisat
+else ini bukan tahun Kabisat
+end if
+====================================================================================
+LAUNDRY DAY
+
+ALGORITMA
+==========
+1. buka mesin cuci
+2. masukkan baju ke mesin cuci
+  2.1 jika sudah 20 pakaian maka lanjut ke step 3
+  2.2 jika kurang 20 maka lanjut ke step 2
+3. hidupkan mesin cuci
+4. display "selesai"
+
+PSEUDOCODE
+==========
+store "mesin cuci" with 0
+
+while "mesin cuci" < 19 do
+  set "mesin cuci" = "mesin cuci" + 1
+end while
+if "mesin cuci" > 19 then
+  do "nyalakan mesin"
+end if
+display "selesai"
+====================================================================================
+PERIKSA KUKU
+
+ALGORITMA
+==========
+1. Memeriksa Kuku 1 per 1 dari 40 murid
+2. jika kuku panjang, maka harus di hukum
+3. jika kuku pendek, maka mendapatkan reward
+4. jika murid sudah 40 maka lanjut ke step 6
+5. jika murid kurang 40 maka lanjut ke step 1
+6. selesai
+
+PSEUDOCODE
+==========
+
+store "murid" with 0
+  
+while "murid" < 39
+  do "periksa"
+    if "kuku panjang" 
+    do "hukum"
+    display "kamu di hukum"
+  else
+    if "kuku pendek"
+    do "selamat"
+    display "selamat kamu tidak di hukum"
+end if
+end while
+====================================================================================
