@@ -28,48 +28,43 @@ TAHUN KABISAT
 
 ALGORITMA
 ==========
-1. Jika angka tahun itu habis dibagi 400, maka tahun itu sudah pasti tahun kabisat.
-2. Jika angka tahun itu tidak habis dibagi 400 tetapi habis dibagi 100, maka tahun itu sudah pasti bukan merupakan tahun kabisat.
-3. Jika angka tahun itu tidak habis dibagi 400, tidak habis dibagi 100 akan tetapi habis dibagi 4, maka tahun itu merupakan tahun kabisat.
-4. Jika angka tahun tidak habis dibagi 400, tidak habis dibagi 100, dan tidak habis dibagi 4, maka tahun tersebut bukan merupakan tahun kabisat.
 
+1. Jika tahun habis di bagi 4 dan tidak habis di bagi 100 maka itu tahun kabisat
+2. Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400 maka itu tahun kabisat
+4
+214
 PSEUDOCODE
 ==========
-if year modulo 4 is 0
-then
-  if year modulo 100 is 0
-  then 
-    if year modulo 400 is 0
-    then
-      ini tahun Kabisat
-    else
-      ini bukan tahun Kabisat
-  else ini tahun Kabisat
-else ini bukan tahun Kabisat
-end if
+if "tahun" / 4 === 0 && "tahun" / 100 !== 0
+  display "ini tahun kabisat"
+else
+if "tahun" / 4 === 0 && "tahun" / 100 === 0 && "tahun" / 400
+  display "ini tahun kabisat
+else
+  display "ini bukan tahun kabisat"
+
 ====================================================================================
 LAUNDRY DAY
 
 ALGORITMA
 ==========
-1. buka mesin cuci
-2. masukkan baju ke mesin cuci
+1. membuka tutup mesin cuci
+2. memasukkan pakaian ke mesin cuci
   2.1 jika sudah 20 pakaian maka lanjut ke step 3
   2.2 jika kurang 20 maka lanjut ke step 2
-3. hidupkan mesin cuci
-4. display "selesai"
+3. hidupkan mesin
 
 PSEUDOCODE
 ==========
-store "mesin cuci" with 0
+store "baju" with 0
 
-while "mesin cuci" < 19 do
-  set "mesin cuci" = "mesin cuci" + 1
+while "baju" <= 20
+do
+  set "baju"="baju" + 1
+else if "baju" = 20
+  display "penuh"
+  do "hidupkan mesin"
 end while
-if "mesin cuci" > 19 then
-  do "nyalakan mesin"
-end if
-display "selesai"
 ====================================================================================
 PERIKSA KUKU
 
