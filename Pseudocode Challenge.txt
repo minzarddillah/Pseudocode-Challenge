@@ -39,7 +39,7 @@ if "tahun" / 4 === 0 && "tahun" / 100 !== 0
   display "ini tahun kabisat"
 else
 if "tahun" / 4 === 0 && "tahun" / 100 === 0 && "tahun" / 400
-  display "ini tahun kabisat
+  display "ini tahun kabisat"
 else
   display "ini bukan tahun kabisat"
 
